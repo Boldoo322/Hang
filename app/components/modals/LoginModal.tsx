@@ -10,7 +10,7 @@ import {
 } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
 import { AiFillGithub } from "react-icons/ai";
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 
 import useRegisterModal from "@/app/hooks/useRegisterModal";
 import useLoginModal from "@/app/hooks/useLoginModal";
@@ -54,6 +54,7 @@ const LoginModal = () => {
         toast.success('Logged in');
         router.refresh();
         loginModal.onClose();
+        redirect("/");
       }
       
       if (callback?.error) {
