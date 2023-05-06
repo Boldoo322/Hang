@@ -36,7 +36,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
     if (!currentUser) {
       return loginModal.onOpen();
     }
-
+  
     rentModal.onOpen();
   }, [loginModal, rentModal, currentUser]);
 
@@ -57,8 +57,10 @@ const UserMenu: React.FC<UserMenuProps> = ({
             transition 
             cursor-pointer
           "
-        >
-          Airbnb your home
+        ><div className="div">
+          {}
+          Hang нэмэх
+          </div>
         </div>
         <div 
         onClick={toggleOpen}
@@ -81,6 +83,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
           <AiOutlineMenu />
           <div className="hidden md:block">
             <Avatar src={currentUser?.image} />
+            {currentUser?.name}
           </div>
         </div>
       </div>
@@ -103,23 +106,23 @@ const UserMenu: React.FC<UserMenuProps> = ({
             {currentUser ? (
               <>
                 <MenuItem 
-                  label="My trips" 
+                  label="Миний аялалууд" 
                   onClick={() => router.push('/trips')}
                 />
                 <MenuItem 
-                  label="My favorites" 
+                  label="Миний таалагдсан" 
                   onClick={() => router.push('/favorites')}
                 />
                 <MenuItem 
-                  label="My reservations" 
+                  label="Миний захиалгууд" 
                   onClick={() => router.push('/reservations')}
                 />
                 <MenuItem 
-                  label="My properties" 
+                  label="Миний үйлчилгээнүүд" 
                   onClick={() => router.push('/properties')}
                 />
                 <MenuItem 
-                  label="Airbnb your home" 
+                  label="Hang нэмэх" 
                   onClick={rentModal.onOpen}
                 />
                 <hr />
