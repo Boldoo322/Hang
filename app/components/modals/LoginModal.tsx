@@ -54,7 +54,7 @@ const LoginModal = () => {
         toast.success('Logged in');
         router.refresh();
         loginModal.onClose();
-        redirect("/");
+        redirect("hangmgl.herokuapp.com/");
       }
       
       if (callback?.error) {
