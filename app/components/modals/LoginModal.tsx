@@ -52,7 +52,7 @@ const LoginModal = () => {
 
       if (callback?.ok) {
         toast.success('Logged in');
-        router.push('https://hangmgl.herokuapp.com/');
+        router.refresh();
         loginModal.onClose();
       }
       

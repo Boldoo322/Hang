@@ -53,7 +53,7 @@ export const authOptions: AuthOptions = {
     })
   ],
   pages: {
-    signIn: 'hangmgl.herokuapp.com/',
+    signIn: '/',
   },
   debug: process.env.NODE_ENV === 'development',
   session: {
