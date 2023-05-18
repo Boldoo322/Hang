@@ -53,7 +53,7 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
             gap-2
           "
         >
-          <div>Hang нийтлэсэн {user?.name}</div>
+          <div>Hang нийтлэсэн <b>{user?.name}</b></div>
           <Avatar src={user?.image} />
         </div>
         <div className="

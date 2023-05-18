@@ -58,6 +58,13 @@ const ListingCard: React.FC<ListingCardProps> = ({
 
     return data.price;
   }, [reservation, data.price]);
+  const title = useMemo(() => {
+    if (reservation) {
+      return reservation.listing.title;
+    }
+
+    return data.title;
+  }, [reservation, data.title]);
 
   const reservationDate = useMemo(() => {
     if (!reservation) {
@@ -109,7 +116,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
           </div>
         </div>
         <div className="font-semibold text-lg">
-          {reservation?.listing.title}
+          {title}
         </div>
         <div className="font-light text-neutral-500">
           {reservationDate || data.category}

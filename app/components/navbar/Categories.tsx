@@ -1,22 +1,9 @@
 'use client';
 
 import { usePathname, useSearchParams } from 'next/navigation';
-import { TbBeach, TbMountain, TbPool } from 'react-icons/tb';
-import { 
-  GiGymBag,
-  GiBarn, 
-  GiBoatFishing, 
-  GiCactus, 
-  GiCastle, 
-  GiCaveEntrance, 
-  GiForestCamp, 
-  GiIsland,
-  GiWindmill
-} from 'react-icons/gi';
-import {BiRestaurant , BiCoffeeTogo, BiBasketball,BiBeer, BiGasPump,BiCameraMovie} from 'react-icons/bi'
-import { FaSkiing ,FaHotel, FaShoppingCart, FaGamepad, FaCocktail} from 'react-icons/fa';
-import { BsSnow } from 'react-icons/bs';
-import { IoDiamond } from 'react-icons/io5';
+import { GiForestCamp} from 'react-icons/gi';
+import { BiRestaurant , BiCoffeeTogo, BiBasketball,BiBeer, BiGasPump,BiCameraMovie} from 'react-icons/bi'
+import { FaShoppingCart, FaGamepad} from 'react-icons/fa';
 import { MdOutlineVilla } from 'react-icons/md';
 import { CgGym } from 'react-icons/cg';
 import { FiScissors } from 'react-icons/fi';
@@ -32,72 +19,72 @@ export const categories = [
   {
     label: 'Буудал',
     icon: MdOutlineVilla,
-    description: 'This property is close to the Hotel!',
+    description: 'Энэ газар буудалтай илүү төстэй!',
   },
   {
     label: 'Ресторан',
     icon: BiRestaurant,
-    description: 'This property is has Restaurants!',
+    description: 'Энэ газар зоогийн газартай илүү төстэй!',
   },
   {
     label: 'Фитнес',
     icon: CgGym,
-    description: 'This property is Gym!'
+    description: 'Энэ газар Жимтэй илүү төстэй!'
   },
   {
     label: 'Кофе',
     icon: BiCoffeeTogo,
-    description: 'This property is in the coffeeshop!'
+    description: 'Энэ газар зоогийн газартай илүү төстэй!'
   },
   {
     label: 'Заал',
     icon: BiBasketball,
-    description: 'This is property  Sport hall!'
+    description: 'Энэ газар илүү спорт заалтай төстэй!'
   },
   {
     label: 'Дэлгүүр',
     icon: FaShoppingCart,
-    description: 'This property is Super market!'
+    description: 'Энэ газар илүү дэлгүүртэй төстэй!'
   },
   {
     label: 'Салон',
     icon: FiScissors,
-    description: 'This property is near a Beauty!'
+    description: 'Энэ газар илүү салонтой төстэй!'
   },
   {
     label: 'Амралт',
     icon: GiForestCamp,
-    description: 'This property is camping!'
+    description: 'Энэ газар илүү амралтын газартай төстэй!'
   },
   {
     label: 'PC',
     icon: FaGamepad,
-    description: 'This property is a Gaming!'
+    description: 'Энэ газар илүү ПС тоглоомын газартай төстэй!'
   },
   {
     label: 'Паб',
     icon: BiBeer,
-    description: 'This property is in a Pub!'
+    description: 'Энэ газар илүү пабтай төстэй!'
   },
   {
     label: 'Бакери',
     icon: HiCake,
-    description: 'This property offers camping Bakery!'
+    description: 'Энэ газар илүү бакеритэй төстэй!'
   },
   {
     label: 'Шатахуун',
     icon: BiGasPump,
-    description: 'This property is Gas station!'
+    description: 'Энэ газар илүү шатахуун түгээх газартай төстэй!'
   },
   {
     label: 'Кино',
     icon: BiCameraMovie,
-    description: 'This property is in the Movie!'
+    description: 'Энэ газар илүү кино театртай төстэй!'
   },
   {
     label: 'Эмнэлэг',
     icon: RiHospitalLine,
-    description: 'This property is in a Hospital!'
+    description: 'Энэ газар илүү эмнэлэгтэй төстэй!'
   }
 ]
 
