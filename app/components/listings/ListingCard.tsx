@@ -66,6 +66,15 @@ const ListingCard: React.FC<ListingCardProps> = ({
     return data.title;
   }, [reservation, data.title]);
 
+  const priceType = useMemo(() => {
+    if (reservation?.listing.category==="Буудал") {
+      reservation.listing.type = "Хоногт"
+      return reservation.listing.type;
+    }
+
+    return data.type;
+  }, [reservation, data.type]);
+
   const reservationDate = useMemo(() => {
     if (!reservation) {
       return null;
@@ -123,10 +132,10 @@ const ListingCard: React.FC<ListingCardProps> = ({
         </div>
         <div className="flex flex-row items-center gap-1">
           <div className="font-semibold">
-            {price}
+            {/* {price} */}
           </div>
           {!reservation && (
-            <div className="font-light">₮ Өдөрт</div>
+            <div className="font-light">{location?.region}, {location?.label}</div>
           )}
         </div>
         {onAction && actionLabel && (
