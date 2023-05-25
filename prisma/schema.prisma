@@ -10,6 +10,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum ConfirmationStatus{
+  CONFIRMED
+  NOT_CONFIRMED
+}
+
 model User {
   id              String @id @default(auto()) @map("_id") @db.ObjectId
   type            String @db.String @default("user")
@@ -59,7 +64,7 @@ model Listing {
   locationValue String
   userId String @db.ObjectId
   price Int
-  type String?
+  confirmed ConfirmationStatus @default(NOT_CONFIRMED)
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   reservations Reservation[]
