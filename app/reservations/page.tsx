@@ -14,8 +14,8 @@ const ReservationsPage = async () => {
     return (
       <ClientOnly> 
         <EmptyState
-          title="Unauthorized"
-          subtitle="Please login"
+          title="Та нэвтрээгүй байна"
+          subtitle="Нэвтэрч орно уу"
         />
       </ClientOnly>
     )
@@ -27,8 +27,8 @@ const ReservationsPage = async () => {
     return (
       <ClientOnly>
         <EmptyState
-          title="No reservations found"
-          subtitle="Looks like you have no reservations on your properties."
+          title="Ямар ч захиалга олдсонгүй"
+          subtitle="Та аялал захиалаагүй бололтой."
         />
       </ClientOnly>
     );

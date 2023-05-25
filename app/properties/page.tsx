@@ -12,8 +12,8 @@ const PropertiesPage = async () => {
 
   if (!currentUser) {
     return <EmptyState
-      title="Unauthorized"
-      subtitle="Please login"
+      title="Та нэвтрээгүй байна"
+      subtitle="Нэвтэрч орно уу"
     />
   }
 
@@ -23,8 +23,8 @@ const PropertiesPage = async () => {
     return (
       <ClientOnly>
         <EmptyState
-          title="No properties found"
-          subtitle="Looks like you have no properties."
+          title="Таны зохиосон үйлчилгээ алга байна"
+          subtitle="Таньд үйлчлигээ байхгүй бололтой."
         />
       </ClientOnly>
     );

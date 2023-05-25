@@ -36,7 +36,7 @@ const Search = () => {
         diff = 1;
       }
 
-      return `${diff} Days`;
+      return `${diff} Өдөр`;
     }
 
     return 'Хэзээ ч'
@@ -44,7 +44,7 @@ const Search = () => {
 
   const guestLabel = useMemo(() => {
     if (guestCount) {
-      return `${guestCount} Guests`;
+      return `${guestCount} Зочин`;
     }
 
     return 'Хайлт хийх';

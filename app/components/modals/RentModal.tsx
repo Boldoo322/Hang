@@ -125,7 +125,7 @@ const RentModal = () => {
       return undefined
     }
 
-    return 'Back'
+    return 'Буцах'
   }, [step]);
 
   let bodyContent = (
