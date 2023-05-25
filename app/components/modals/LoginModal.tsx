@@ -75,7 +75,7 @@ const LoginModal = () => {
       />
       <Input
         id="email"
-        label="Email"
+        label="Э-майл"
         disabled={isLoading}
         register={register}  
         errors={errors}
@@ -83,7 +83,7 @@ const LoginModal = () => {
       />
       <Input
         id="password"
-        label="Password"
+        label="Нууц үг"
         type="password"
         disabled={isLoading}
         register={register}
@@ -98,19 +98,19 @@ const LoginModal = () => {
       <hr />
       <Button 
         outline 
-        label="Continue with Google"
+        label="Google бүртгэл ашиглах"
         icon={FcGoogle}
         onClick={() => signIn('google')}
       />
       <Button 
         outline 
-        label="Continue with Github"
+        label="Github бүртгэл ашиглах"
         icon={AiFillGithub}
         onClick={() => signIn('github')}
       />
       <div className="
       text-neutral-500 text-center mt-4 font-light">
-        <p>First time using Hang?
+        <p>Анх удаагаа Hang ашиглах гэж байна уу?
           <span 
             onClick={onToggle} 
             className="
@@ -118,7 +118,7 @@ const LoginModal = () => {
               cursor-pointer 
               hover:underline
             "
-            > Create an account</span>
+            > Бүртгүүлэх</span>
         </p>
       </div>
     </div>

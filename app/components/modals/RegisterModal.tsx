@@ -67,11 +67,11 @@ const RegisterModal= () => {
     <div className="flex flex-col gap-4">
       <Heading
         title="Hang-д Тавтай морил"
-        subtitle="Create an account!"
+        subtitle="Хаяг нээх!"
       />
       <Input
         id="email"
-        label="Email"
+        label="Э-майл"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -79,7 +79,7 @@ const RegisterModal= () => {
       />
       <Input
         id="name"
-        label="Name"
+        label="Нэр"
         disabled={isLoading}
         register={register}
         errors={errors}
@@ -87,7 +87,7 @@ const RegisterModal= () => {
       />
       <Input
         id="password"
-        label="Password"
+        label="Нууц үг"
         type="password"
         disabled={isLoading}
         register={register}
@@ -102,13 +102,13 @@ const RegisterModal= () => {
       <hr />
       <Button 
         outline 
-        label="Continue with Google"
+        label="Google бүртгэл ашиглах"
         icon={FcGoogle}
         onClick={() => signIn('google')} 
       />
       <Button 
         outline 
-        label="Continue with Github"
+        label="Github бүртгэл ашиглах"
         icon={AiFillGithub}
         onClick={() => signIn('github')}
       />
@@ -120,7 +120,7 @@ const RegisterModal= () => {
           font-light
         "
       >
-        <p>Already have an account?
+        <p>Аль хэдийн хаягтай юу?
           <span 
             onClick={onToggle} 
             className="
@@ -128,7 +128,7 @@ const RegisterModal= () => {
               cursor-pointer 
               hover:underline
             "
-            > Log in</span>
+            > Нэвтрэх</span>
         </p>
       </div>
     </div>

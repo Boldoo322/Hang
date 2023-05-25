@@ -127,18 +127,18 @@ const UserMenu: React.FC<UserMenuProps> = ({
                 />
                 <hr />
                 <MenuItem 
-                  label="Logout" 
+                  label="Гарах" 
                   onClick={() => signOut()}
                 />
               </>
             ) : (
               <>
                 <MenuItem 
-                  label="Login" 
+                  label="Нэвтрэх" 
                   onClick={loginModal.onOpen}
                 />
                 <MenuItem 
-                  label="Sign up" 
+                  label="Бүртгүүлэх" 
                   onClick={registerModal.onOpen}
                 />
               </>
